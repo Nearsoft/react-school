@@ -1,0 +1,31 @@
+### Object Destructuring 
+Destructuring assignment_ is a special syntax that allows us to “unpack” arrays or objects into a bunch of variables, as sometimes they are more convenient.
+
+Example:
+```javascript
+const options = {
+  title: "Menu",
+  width: 200,
+  id: "main",
+  text: 'black',
+  background: 'white',
+  
+};
+
+const {width: w = 100, height: h = 300, title: t, id, ...color} = options;
+
+console.log(w);
+console.log(t);
+console.log(h);
+console.log(id);
+console.log(color.text);
+console.log(color.background);
+```
+
+Destructured assignment to make a copy of the array
+```javascript
+let array1=[1,2,3,4];
+let [...array2] = array1;
+array1.pop(); // 1,2,3
+console.log(array2); // 1,2,3,4
+```
