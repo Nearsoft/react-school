@@ -37,13 +37,50 @@ body {
 }
 
 .Instructions {
-  text-align: center;
+  text-align: left;
 }
 
 .Instructions__Title {
-  text-align: left;
   font-weight: 500;
   font-size: 24px;
   padding-bottom: 20px;
   font-family: 'PT Mono', monospace;
+}
+
+.ExerciseContainer {
+  border: 2px solid var(--primary-color);
+  border-radius: 1rem;
+}
+
+.Character_Card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 200px;
+  text-align: center;
+
+  padding: 1rem 2rem;
+  padding-top: 0;
+}
+
+.Character_Card .image {
+  width: 100%;
+}
+
+.Character_Card .search {
+  min-height: 2rem;
+  margin: 0.5rem 2rem;
+  font-size: 1rem;
+}
+
+.Character_Card .btn-search {
+  border-radius: 5px;
+  min-height: 2rem;
+  margin: 0.5rem 2rem;
+  font-size: 1rem;
+}
+
+.Character_Card .list {
+  list-style: none;
+  text-align: left;
 }

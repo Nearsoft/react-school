@@ -23,14 +23,14 @@
 }
 
 .SideNav__Menu {
-	padding: 18px 0;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
 .SideNav__Menu__Item {
 	min-height: var(--side-nav-item-height);
 
-	padding-left: 16px;
-	padding-right: 16px;
+	padding: 18px 0;
 
 }
 
