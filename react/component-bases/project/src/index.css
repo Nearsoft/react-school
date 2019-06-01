@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --primary-color: #db3d44;
+  --secondary-color: #0693E3;
+  --text-color: #fefefe;
+
+  --margin-home: 24px;
+  --margin-home-header: 84px;
+
+  --header-nav-height: 64px;
+
+  --excercise-container-height: 400px;
+
+  --side-nav-width: 240px;
+  --side-nav-background-color: var(--primary-color);
+  --side-nav-toolbar-height: 64px;
+  --side-nav-item-height: 24px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  min-height: 100%;
+}
+
+.App__Home {
+  margin: var(--margin-home);
+  margin-left: calc(var(--side-nav-width) + var(--margin-home));
+}
+
+.Instructions {
+  text-align: left;
+}
+
+.Instructions__Title {
+  font-weight: 500;
+  font-size: 24px;
+  padding-bottom: 20px;
+  font-family: 'PT Mono', monospace;
+}
+
+.ExerciseContainer {
+  border: 2px solid var(--primary-color);
+  border-radius: 1rem;
+}
+
+.Character_Card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 200px;
+  text-align: center;
+
+  padding: 1rem 2rem;
+  padding-top: 0;
+}
+
+.Character_Card .image {
+  width: 100%;
+}
+
+.Character_Card .search {
+  min-height: 2rem;
+  margin: 0.5rem 2rem;
+  font-size: 1rem;
+}
+
+.Character_Card .btn-search {
+  border-radius: 5px;
+  min-height: 2rem;
+  margin: 0.5rem 2rem;
+  font-size: 1rem;
+}
+
+.Character_Card .list {
+  list-style: none;
+  text-align: left;
+}
