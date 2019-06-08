@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --primary-color: #3795db;
+  --secondary-color: #0693E3;
+  --text-color: #fefefe;
+
+  --excercise-container-height: 400px;
+
+  --side-nav-background-color: var(--primary-color);
+
+  --home-header-margin: 24px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Home {
+  margin-top: var(--home-header-margin);
+}
+
+.Main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.Main > * {
+  display: flex;
+}
+
+.Main > .row {
+  margin: 0;
+  flex: 1;
+}
+
+.Instructions {
+  text-align: left;
+}
+
+.Instructions__Title {
+  font-weight: 500;
+  font-size: 24px;
+  padding-bottom: 20px;
+  font-family: 'PT Mono', monospace;
+}

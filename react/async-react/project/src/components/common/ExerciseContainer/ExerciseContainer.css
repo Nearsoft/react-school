@@ -1,0 +1,4 @@
+.ExerciseContainer {
+    min-height: var(--excercise-container-height);
+    margin: var(--margin-home);
+}

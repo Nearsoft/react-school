@@ -1,0 +1,43 @@
+.SideNav {
+	background-color: var(--side-nav-background-color);
+	box-sizing: border-box;
+	line-height: 20px;
+	width: 100%;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.SideNav hr {
+	border: 1px solid var(--text-color);
+	width: 100%;
+}
+
+.SideNav__Toolbar {
+	min-height: var(--side-nav-toolbar-height);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.SideNav__Toolbar .list-group {
+	width: 100%;
+}
+
+.SideNav__Toolbar .list-group a {
+	text-decoration: none;
+}
+
+.SideNav__Menu {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.SideNav__Menu__Item {
+	min-height: var(--side-nav-item-height);
+
+	padding: 18px 0;
+
+}
