@@ -1,8 +1,14 @@
 import { API } from './API';
 
 class DataAPI extends API {
-  constructor(baseUrl = 'http https://swapi.co/api') {
+  constructor(baseUrl = 'https://rickandmortyapi.com/api') {
     super(baseUrl);
+  }
+
+  getEpisodes() {
+    const url = '/episode';
+    return this.makeRequest({ url, method: 'GET' })
+      .then(({ results }) => results);
   }
 
   getPerson(id) {
