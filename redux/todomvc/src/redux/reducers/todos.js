@@ -28,27 +28,19 @@ export default function todos(state = initialState, action) {
       ];
 
     case DELETE_TODO:
-      return state.filter(todo => todo.id !== action.id);
+      return state;
 
     case EDIT_TODO:
-      return state.map(todo =>
-        todo.id === action.id ? { ...todo, text: action.text } : todo
-      );
+      return state;
 
     case COMPLETE_TODO:
-      return state.map(todo =>
-        todo.id === action.id ? { ...todo, completed: !todo.completed } : todo
-      );
+      return state;
 
     case COMPLETE_ALL_TODOS:
-      const areAllMarked = state.every(todo => todo.completed);
-      return state.map(todo => ({
-        ...todo,
-        completed: !areAllMarked
-      }));
+      return state;
 
     case CLEAR_COMPLETED:
-      return state.filter(todo => todo.completed === false);
+      return state;
 
     default:
       return state;
