@@ -6,7 +6,7 @@ Introductory course for JS/React/Redux/Saga ecosystem
 
 **Chapters**
 
-- [JavaScript ES6 features](https://github.com/Nearsoft/react-school/1-ES6-features)
+- [JavaScript ES6 features](https://github.com/Nearsoft/react-school/tree/master/1-ES6-features)
 
 ## General References
 
