@@ -6,8 +6,10 @@ Introductory course for JS/React/Redux/Saga ecosystem
 
 **Chapters**
 
-- [JavaScript ES6 features](https://github.com/Nearsoft/react-school/tree/master/1-ES6-features)
-- [NPM & Webpack](https://github.com/Nearsoft/react-school/tree/master/2-Webpack)
+1. [Javascript Fundamentals](https://github.com/Nearsoft/react-school/tree/master/1 Javascript)
+2. [New ES6 features](https://github.com/Nearsoft/react-school/tree/master/1-ES6-features)
+3. [NPM & Webpack](https://github.com/Nearsoft/react-school/tree/master/2-Webpack)
+4. React for First Times
 
 ## General References
 
