@@ -10,6 +10,8 @@ Introductory course for JS/React/Redux/Saga ecosystem
 2. [New ES6 features](https://github.com/Nearsoft/react-school/tree/master/2-ES6-features)
 3. [NPM & Webpack](https://github.com/Nearsoft/react-school/tree/master/3-Webpack)
 4. React for First Times
+5. Advanced react
+6. Redux
 
 ## General References
 
@@ -18,3 +20,7 @@ Introductory course for JS/React/Redux/Saga ecosystem
 - [CodeSandbox](https://codesandbox.io/) - online editor for modern frontend development.
 - [Redux Saga](https://redux-saga.js.org/) - Library that aims to make application side effects .
 - [Webpack](https://webpack.js.org/) - Javascript module bundler with plugins for CSS, SASS, HTML, etc.
+
+---
+
+Copyright (c) Nearsoft Inc. All rights reserved.
