@@ -14,6 +14,11 @@ Introductory course for JS/React/Redux/Saga ecosystem
 6. [Redux](https://github.com/Nearsoft/react-school/tree/master/6-Redux)
 7. [Sagas](https://github.com/Nearsoft/react-school/tree/master/7-Sagas)
 
+## Exercises
+
+Rock-Paper-Scissors
+https://github.com/echavezNS/react-rock-paper-scissors
+
 ## General References
 
 - [React Docs](https://reactjs.org/docs/getting-started.html) - official documentation
