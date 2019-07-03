@@ -11,7 +11,7 @@ Introductory course for JS/React/Redux/Saga ecosystem
 3. [NPM & Webpack](https://github.com/Nearsoft/react-school/tree/master/3-Webpack)
 4. [React for First Times](https://github.com/Nearsoft/react-school/tree/master/4-React-first-times)
 5. Advanced react
-6. Redux
+6. [Redux](https://github.com/Nearsoft/react-school/tree/master/6-Redux)
 7. [Sagas](https://github.com/Nearsoft/react-school/tree/master/7-Sagas)
 
 ## General References
