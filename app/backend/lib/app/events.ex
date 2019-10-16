@@ -18,7 +18,7 @@ defmodule App.Events do
 
   """
   def list_events do
-    Repo.all from p in Event, preload: [:user]
+    Repo.all from p in Event, preload: [:user, :atendees]
   end
 
   @doc """
@@ -52,9 +52,10 @@ defmodule App.Events do
 
   """
   def create_event(attrs \\ %{}) do
-    %Event{}
+    {:ok, event } = %Event{}
     |> Event.changeset(attrs)
     |> Repo.insert()
+    {:ok, event |> Repo.preload([:user, :atendees])}
   end
 
   @doc """

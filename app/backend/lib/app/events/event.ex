@@ -19,7 +19,7 @@ defmodule App.Events.Event do
   @doc false
   def changeset(event, attrs) do
     event
-    |> cast(attrs, ~w(name description limit sell_start_date sell_end_date event_start_date event_end_date user_id))
+    |> cast(attrs, [:name, :description, :limit, :sell_start_date, :sell_end_date, :event_start_date, :event_end_date, :user_id])
     |> validate_required([:name, :description, :limit, :sell_start_date, :sell_end_date, :event_start_date, :event_end_date])
   end
 end

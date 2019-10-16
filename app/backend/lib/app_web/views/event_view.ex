@@ -11,7 +11,6 @@ defmodule AppWeb.EventView do
   end
 
   def render("event.json", %{event: event}) do
-    IO.inspect(event.atendees)
     %{
       id: event.id,
       name: event.name,
