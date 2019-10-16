@@ -2,3 +2,4 @@ app/frontend/dist
 app/frontend/node_modules
 app/backend/assets/node_modules
 app/backend/_build
+app/backend/deps
