@@ -1,7 +1,6 @@
 defmodule AppWeb.EventView do
   use AppWeb, :view
-  alias AppWeb.EventView
-  alias AppWeb.AtendeeView
+  alias AppWeb.{AtendeeView, EventView, UserView}
 
   def render("index.json", %{events: events}) do
     %{data: render_many(events, EventView, "event.json")}
@@ -12,8 +11,7 @@ defmodule AppWeb.EventView do
   end
 
   def render("event.json", %{event: event}) do
-    user = event.user
-    IO.inspect(event.atendees) 
+    IO.inspect(event.atendees)
     %{
       id: event.id,
       name: event.name,
@@ -23,12 +21,7 @@ defmodule AppWeb.EventView do
       sell_end_date: event.sell_end_date,
       event_start_date: event.event_start_date,
       event_end_date: event.event_end_date,
-      user: %{
-        user_id: user.id,
-        name: user.name,
-        last_name: user.last_name,
-        email: user.email,
-      },
+      user: render_one(event.user, UserView, "user.json"),
       atendees: render_many(event.atendees, AtendeeView, "atendee.json")
     }
   end

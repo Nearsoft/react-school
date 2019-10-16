@@ -24,8 +24,7 @@ defmodule AppWeb.Router do
     pipe_through :api
 
     resources "/users", UserController, only: [:index, :show]
-    resources "/atendees", AtendeeController, only: [:index, :new, :edit]
+    resources "/atendees", AtendeeController, only: [:index, :new, :edit, :show]
     resources "/events", EventController, only: [:index, :new, :edit, :show]
-    resources "/lists", ListController, only: [:index, :new, :edit, :show]
   end
 end

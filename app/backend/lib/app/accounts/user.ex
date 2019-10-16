@@ -15,7 +15,7 @@ defmodule App.Accounts.User do
   @doc false
   def changeset(user, attrs) do
     user
-    |> cast(attrs, [:name, :last_name, :email, :password])
+    |> cast(attrs, [:name, :last_name, :email, :password, :event_id])
     |> validate_required([:name, :last_name, :email, :password])
     |> unique_constraint(:email)
   end

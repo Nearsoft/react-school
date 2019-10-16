@@ -1,13 +1,13 @@
 defmodule App.Accounts.Atendee do
   use Ecto.Schema
   import Ecto.Changeset
-  alias App.Events.List
+  alias App.Events.Event
 
   schema "atendees" do
     field :email, :string
     field :name, :string
     field :tshirt_size, :string
-    belongs_to :list, List
+    many_to_many(:events, Event, join_through: "event_atendee")
     timestamps()
   end
 

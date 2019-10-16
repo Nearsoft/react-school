@@ -1,8 +1,7 @@
 defmodule App.Events.Event do
   use Ecto.Schema
   import Ecto.Changeset
-  alias App.Accounts.User
-  alias App.Events.List
+  alias App.Accounts.{Atendee, User}
 
   schema "events" do
     field :description, :string
@@ -13,14 +12,14 @@ defmodule App.Events.Event do
     field :sell_end_date, :date
     field :sell_start_date, :date
     belongs_to :user, User
-    has_many :list, List
+    many_to_many(:atendees, Atendee, join_through: "event_atendees")
     timestamps()
   end
 
   @doc false
   def changeset(event, attrs) do
     event
-    |> cast(attrs, [:name, :description, :limit, :sell_start_date, :sell_end_date, :event_start_date, :event_end_date])
+    |> cast(attrs, ~w(name description limit sell_start_date sell_end_date event_start_date event_end_date user_id))
     |> validate_required([:name, :description, :limit, :sell_start_date, :sell_end_date, :event_start_date, :event_end_date])
   end
 end
