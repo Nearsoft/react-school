@@ -105,4 +105,8 @@ defmodule App.Events do
     Event.changeset(event, %{})
   end
 
+  def list_atendees(event_id) do
+    Repo.get!(Event, event_id) |> Repo.preload([:atendees])
+  end
+
 end
