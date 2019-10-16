@@ -1,2 +1,4 @@
-/app/frontend/dist
-/app/frontend/node_modules
+app/frontend/dist
+app/frontend/node_modules
+app/backend/assets/node_modules
+app/backend/_build
