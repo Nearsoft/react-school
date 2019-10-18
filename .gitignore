@@ -1,5 +1,5 @@
-app/frontend/dist
-app/frontend/node_modules
+app/frontend-client/dist
+app/frontend-client/node_modules
 app/backend/assets/node_modules
 app/backend/package-lock.json
 app/backend/_build
