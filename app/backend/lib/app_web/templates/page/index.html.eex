@@ -45,7 +45,7 @@
         <h4 class="h4 mb-3">React Concepts</h4>
         <div class="card">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">React</li>
+            <li class="list-group-item">¿Que es React?</li>
             <li class="list-group-item">Components</li>
             <li class="list-group-item">JSX</li>
           </ul>
