@@ -1,0 +1,25 @@
+// Inuit Spacing Variables
+$inuit-spacing-properties: (
+  'padding': 'padding',
+  'margin': 'margin',
+);
+
+$inuit-spacing-sizes: (
+  null: $inuit-global-spacing-unit,
+  '-tiny': $inuit-global-spacing-unit-tiny,
+  '-small': $inuit-global-spacing-unit-small,
+  '-large': $inuit-global-spacing-unit-large,
+  '-huge': $inuit-global-spacing-unit-huge,
+  '-none': 0,
+  '-auto': auto
+);
+
+$inuit-spacing-directions: (
+  null: null,
+  '-top': ('-top'),
+  '-right': ('-right'),
+  '-bottom': ('-bottom'),
+  '-left': ('-left'),
+  '-horizontal': ('-left', '-right'),
+  '-vertical': ('-top', '-bottom')
+);

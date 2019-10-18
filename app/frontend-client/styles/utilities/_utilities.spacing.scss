@@ -1,0 +1,52 @@
+@each $property, $property-namespace in $inuit-spacing-properties {
+
+  @each $direction-namespace, $directions in $inuit-spacing-directions {
+
+    @each $size, $value in $inuit-spacing-sizes {
+
+      .r-#{$property-namespace}#{$direction-namespace}#{$size} {
+
+        @each $direction in $directions {
+          #{$property}#{$direction}: $value !important;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+@if (variable-exists(mq-breakpoints)) {
+
+  @each $inuit-bp-name, $inuit-bp-value in $mq-breakpoints {
+
+    @include mq($from: $inuit-bp-name) {
+
+      @each $property, $property-namespace in $inuit-spacing-properties {
+
+        @each $direction-namespace, $directions in $inuit-spacing-directions {
+
+          @each $size, $value in $inuit-spacing-sizes {
+
+            .r-#{$property}#{$direction-namespace}#{$size}\@#{$inuit-bp-name} {
+
+              @each $direction in $directions {
+                #{$property}#{$direction}: $value !important;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

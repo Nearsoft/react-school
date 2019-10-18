@@ -4,17 +4,14 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import '../styles/app.scss';
 
 // Pages
-import Home from './js/components/pages/home/Home';
-import EventRoutes from './js/routes/EventRoutes';
-import NotFound from './js/components/NotFound.js';
+import AppRoutes from './js/routes/AppRoutes';
+import Layout from './js/components/Layout';
 
 const App = () => (
   <Router>
-    <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/events" component={EventRoutes} />
-      <Route render={() => <NotFound />} />
-    </Switch>
+    <Layout>
+      <AppRoutes />
+    </Layout>
   </Router>
 );
 
