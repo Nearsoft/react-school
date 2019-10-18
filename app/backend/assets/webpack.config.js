@@ -1,6 +1,6 @@
 const path = require('path');
 const glob = require('glob');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -22,6 +22,16 @@ module.exports = (env, options) => ({
   module: {
     rules: [
       {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+              name: '[name].[ext]',
+              outputPath: '../fonts'
+          }
+        }]
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
@@ -29,13 +39,21 @@ module.exports = (env, options) => ({
         }
       },
       {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
-      }
+        test: /\.scss$/i,
+        exclude: /node_modules/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ],
+      },
     ]
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: '../css/app.css' }),
-    new CopyWebpackPlugin([{ from: 'static/', to: '../' }])
+    new CopyWebpackPlugin([{ from: 'static/', to: '../' }]),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    }),
   ]
 });

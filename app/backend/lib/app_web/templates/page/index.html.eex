@@ -1,35 +1,93 @@
 <section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>A productive web framework that<br/>does not compromise speed or maintainability.</p>
+  <p>Una iniciativa de Nearsoft para formar front-end developers que se especialicen en React.</p>
 </section>
 
-<section class="row">
-  <article class="column">
-    <h2>Resources</h2>
-    <ul>
-      <li>
-        <a href="https://hexdocs.pm/phoenix/overview.html">Guides &amp; Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix/blob/v1.4/CHANGELOG.md">v1.4 Changelog</a>
-      </li>
-    </ul>
-  </article>
-  <article class="column">
-    <h2>Help</h2>
-    <ul>
-      <li>
-        <a href="https://elixirforum.com/c/phoenix-forum">Forum</a>
-      </li>
-      <li>
-        <a href="https://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on Freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
-      </li>
-    </ul>
-  </article>
+<section class="bg p-3 pb-5">
+  <h3 class="text-center mb-4 h2">Temario del curso</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <h4 class="h4 mb-3">JavaScript Fundamentals</h4>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Course introduction</li>
+            <li class="list-group-item">Functions</li>
+            <li class="list-group-item">Functions in JavaScript</li>
+            <li class="list-group-item">Map and Reduce</li>
+            <li class="list-group-item">Scope and Closures</li>
+          </ul>
+        </div>
+
+        <h4 class="h4 mb-3 mt-5">ES6</h4>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Variable Types</li>
+            <li class="list-group-item">"Classes"</li>
+            <li class="list-group-item">Promises</li>
+            <li class="list-group-item">Object Destructuring and Spread Syntax</li>
+            <li class="list-group-item">Arrow Functions</li>
+            <li class="list-group-item">JavaScript Modules</li>
+          </ul>
+        </div>
+
+        <h4 class="h4 mb-3 mt-5">Modern Tooling</h4>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Node</li>
+            <li class="list-group-item">NPM</li>
+            <li class="list-group-item">Modules</li>
+            <li class="list-group-item">Module Building</li>
+            <li class="list-group-item">Transpiling</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6">
+        <h4 class="h4 mb-3">React Concepts</h4>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">React</li>
+            <li class="list-group-item">Components</li>
+            <li class="list-group-item">JSX</li>
+          </ul>
+        </div>
+
+        <h4 class="h4 mb-3 mt-4">Components Bases</h4>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Render</li>
+            <li class="list-group-item">Props</li>
+            <li class="list-group-item">Lifecycle Methods</li>
+            <li class="list-group-item">State</li>
+            <li class="list-group-item">Events</li>
+          </ul>
+        </div>
+
+        <h4 class="h4 mb-3 mt-4">Components types</h4>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Dynamic Components</li>
+            <li class="list-group-item">Class Components</li>
+            <li class="list-group-item">Stateless Components</li>
+            <li class="list-group-item">High order Components</li>
+          </ul>
+        </div>
+
+        <h4 class="h4 mb-3 mt-4">Async Code in React</h4>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">React Router</li>
+          </ul>
+        </div>
+
+        <h4 class="h4 mb-3 mt-4">Redux</h4>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">State and Flow</li>
+            <li class="list-group-item">Actions</li>
+            <li class="list-group-item">Reducers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

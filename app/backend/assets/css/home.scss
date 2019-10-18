@@ -1,0 +1,22 @@
+.logo {
+  width: 200px;
+}
+
+.bg {
+  background-color: $bg-gray;
+}
+
+.home-container {
+  .logo-container {
+    h1 {
+      font-size: 70px;
+      position: absolute;
+      z-index: 1;
+    }
+
+    img {
+      opacity: .2;
+    }
+  }
+
+}
