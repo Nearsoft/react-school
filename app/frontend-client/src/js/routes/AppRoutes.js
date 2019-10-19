@@ -5,7 +5,7 @@ import Home from '../components/pages/home/Home';
 import EventRoutes from './EventRoutes';
 import NotFound from '../components/NotFound';
 
-function AppRoutes() {
+function AppRoutes(props) {
   return (
     <Switch>
       <Route path="/" exact component={Home} />

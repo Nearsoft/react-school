@@ -18,6 +18,7 @@ defmodule AppWeb.EventView do
       limit: event.limit,
       sell_start_date: event.sell_start_date,
       sell_end_date: event.sell_end_date,
+      cost: event.cost,
       event_start_date: event.event_start_date,
       event_end_date: event.event_end_date,
       user: render_one(event.user, UserView, "user.json"),

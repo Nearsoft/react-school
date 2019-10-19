@@ -22,7 +22,7 @@ class Home extends Component {
     return (
       <div className="events-wrapper">
         {events && events.map((singleEvent) => (
-          <EventCard singleEvent={singleEvent} key={singleEvent.id}/>
+          <EventCard singleEvent={singleEvent} key={singleEvent.id} showButton />
         ))}
       </div>
     );
