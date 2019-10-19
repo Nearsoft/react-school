@@ -2,8 +2,8 @@ use Mix.Config
 
 # Configure your database
 config :app, App.Repo,
-  username: "cuubackup",
-  password: "",
+  username: "postgres",
+  password: "P0stgr3s",
   database: "reactschool",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import EventCard from './EventCard';
+import SignInEvent from './SignInEvent';
 
 class SingleEvent extends Component {
 
@@ -24,12 +25,7 @@ class SingleEvent extends Component {
     return (
       <div>
         <EventCard singleEvent={singleEvent} showButton={false} />
-        <div>
-          <form>
-            <label>Field</label>
-            <input type='text' />
-          </form>
-        </div>
+        <SignInEvent />
       </div>
     );
   }
