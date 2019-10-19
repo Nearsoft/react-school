@@ -18,6 +18,8 @@ $flexes: (
   }
 }
 
+@include flex();
+
 .absolute {
   position: absolute;
 }
