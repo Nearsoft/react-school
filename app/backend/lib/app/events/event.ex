@@ -9,6 +9,7 @@ defmodule App.Events.Event do
     field :event_start_date, :date
     field :limit, :integer
     field :address, :string
+    field :thumbnail_url, :string
     field :name, :string
     field :cost, :integer
     field :sell_end_date, :date
@@ -21,7 +22,7 @@ defmodule App.Events.Event do
   @doc false
   def changeset(event, attrs) do
     event
-    |> cast(attrs, [:name, :description, :address, :cost, :limit, :event_type, :sell_start_date, :sell_end_date, :event_start_date, :event_end_date, :user_id])
+    |> cast(attrs, [:name, :description, :address, :thumbnail_url, :cost, :limit, :event_type, :sell_start_date, :sell_end_date, :event_start_date, :event_end_date, :user_id])
     |> validate_required([:name, :description, :limit, :sell_start_date, :sell_end_date, :event_start_date, :event_end_date])
   end
 end

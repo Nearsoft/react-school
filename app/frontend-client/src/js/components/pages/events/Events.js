@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import EventApi from '../../../api/events_api';
 import EventCard from './EventCard';
 
-class Home extends Component {
+class Events extends Component {
 
   constructor(props) {
     super(props);
@@ -21,6 +21,7 @@ class Home extends Component {
     const { events } = this.state;
     return (
       <div className="events-wrapper">
+        <h1>Eventos</h1>
         {events && events.map((singleEvent) => (
           <EventCard singleEvent={singleEvent} key={singleEvent.id} showButton />
         ))}
@@ -29,4 +30,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Events;

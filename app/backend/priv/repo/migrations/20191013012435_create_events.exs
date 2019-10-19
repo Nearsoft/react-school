@@ -8,6 +8,7 @@ defmodule App.Repo.Migrations.CreateEvents do
       add :limit, :integer
       add :sell_start_date, :date
       add :cost, :integer
+      add :thumbnail_url, :string
       add :address, :string
       add :sell_end_date, :date
       add :event_start_date, :date
