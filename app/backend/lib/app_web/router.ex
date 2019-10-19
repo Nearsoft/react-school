@@ -11,6 +11,7 @@ defmodule AppWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    plug CORSPlug, origin: "http://localhost:4001"
   end
 
   scope "/", AppWeb do
