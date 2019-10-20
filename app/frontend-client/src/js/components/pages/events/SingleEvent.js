@@ -23,9 +23,12 @@ class SingleEvent extends Component {
   render() {
     const { singleEvent } = this.state;
     return (
-      <div>
+      <div className="flex flex-1 flex-column">
         <EventCard singleEvent={singleEvent} showButton={false} />
         <SignInEvent />
+        <div className="r-margin-vertical-small">
+          <button className="btn btn-primary float-right" onClick={() => this.props.history.replace('/events')}>Volver</button>
+        </div>
       </div>
     );
   }

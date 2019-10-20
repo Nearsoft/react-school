@@ -4,3 +4,4 @@ app/backend/assets/node_modules
 app/backend/package-lock.json
 app/backend/_build
 app/backend/deps
+app/backend/erl_crash.dump

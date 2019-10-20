@@ -21,6 +21,9 @@
 .btn-primary {
   background: $button-primary-bg-color;
   color: $button-primary-text-color;
+  border-radius: 13px;
+  padding-left: 40px;
+  padding-right: 40px;
 
   &:hover {
     background-color: $button-primary-hover-bg-color;
