@@ -1,7 +1,9 @@
 app/frontend-client/dist
 app/frontend-client/node_modules
+app/frontend-client/package-lock.json
 app/backend/assets/node_modules
 app/backend/package-lock.json
 app/backend/_build
 app/backend/deps
 app/backend/erl_crash.dump
+app/backend/priv/static/js/app.js
