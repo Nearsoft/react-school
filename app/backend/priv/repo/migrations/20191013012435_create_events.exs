@@ -6,6 +6,7 @@ defmodule App.Repo.Migrations.CreateEvents do
       add :name, :string
       add :description, :text
       add :limit, :integer
+      add :city, :string
       add :sell_start_date, :date
       add :cost, :integer
       add :thumbnail_url, :string

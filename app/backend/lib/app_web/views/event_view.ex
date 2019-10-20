@@ -16,6 +16,7 @@ defmodule AppWeb.EventView do
       name: event.name,
       description: event.description,
       limit: event.limit,
+      city: event.city,
       sell_start_date: event.sell_start_date,
       sell_end_date: event.sell_end_date,
       cost: event.cost,
