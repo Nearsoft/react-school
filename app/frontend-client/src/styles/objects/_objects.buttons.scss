@@ -1,0 +1,67 @@
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  padding: $inuit-global-spacing-unit-tiny 2 * $inuit-global-spacing-unit-tiny;
+  border: 0;
+
+  // Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-primary {
+  background: $button-primary-bg-color;
+  color: $button-primary-text-color;
+  border-radius: 13px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  &:hover {
+    background-color: $button-primary-hover-bg-color;
+  }
+}
+
+.btn-secondary {
+  background: $button-secondary-bg-color;
+  color: $button-secondary-text-color;
+
+  &:hover {
+    background-color: lighten($button-secondary-bg-color, 10%);
+  }
+}
+
+.btn-slim {
+  min-height: 30px;
+}
+
+.btn-transparent {
+  background-color: transparent;
+}
+
+.btn-disabled {
+  background-color: $grey-color;
+}
+
+.btn-link {
+  color: $link-color;
+  height: auto;
+  min-height: auto;
+  padding: 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.btn--auto-height {
+  height: auto;
+}

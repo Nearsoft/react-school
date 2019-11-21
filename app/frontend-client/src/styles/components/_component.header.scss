@@ -1,0 +1,15 @@
+.header {
+  height: 50px;
+  background-color: #212329;
+  padding-right: 60px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.loggedUser {
+  color: white;
+}

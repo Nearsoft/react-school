@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: #F8F8FA;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &[disabled] {
+    pointer-events: none;
+  }
+}
+
+input {
+  border-radius: 0;
+}
+
+input:disabled {
+  opacity: 1;
+}
+
+p,
+li {
+  text-align: left;
+}
+
+table {
+  margin: 0;
+}
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+}
+
+
+// remove borders added by Chrome 62
+input[type='button'],
+input[type='submit'],
+input[type='file'],
+button {
+  border-radius: 0;
+}
