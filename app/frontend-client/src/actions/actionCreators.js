@@ -5,6 +5,13 @@ export function getEvents(events) {
     };
 }
 
+export function setEvent(event, events) {
+    return {
+        type: 'SET_EVENT',
+        payload: {event, events}
+    };
+}
+
 export function getEvent(event) {
     return {
         type: 'GET_EVENT',

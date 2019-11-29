@@ -6,6 +6,8 @@ import * as actionCreators from '../../actions/actionCreators';
 import { getEvents } from '../../services/events';
 import Event from '../event';
 
+import store from '../../store';
+
 class Events extends Component {
 
     constructor(props) {
@@ -33,6 +35,7 @@ class Events extends Component {
     }
 
     render() {
+        console.log(store.getState());
         const { events } = this.props;
         return (
             <div className="events-wrapper">

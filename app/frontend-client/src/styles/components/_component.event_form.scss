@@ -1,0 +1,18 @@
+.event-form-wrapper {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    background-color: $white;
+    border: 1px solid $grey-light-color;
+    label {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .field-group {
+      margin-bottom: 30px;
+    }
+    textarea,
+    input {
+      width: 100%;
+    }
+  }

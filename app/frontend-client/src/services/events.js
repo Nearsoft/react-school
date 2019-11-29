@@ -11,3 +11,7 @@ export function getEvents() {
 export function getEvent(id) {
     return client.get(`event/${id}`);
 }
+
+export function createEvent(event) {
+    return client.post(`event`, event);
+}

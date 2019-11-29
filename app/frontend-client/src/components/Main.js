@@ -15,6 +15,7 @@ class Main extends Component {
         return (
             <Router>
                 <Switch>
+                    <Route path="/events/new" component={EventForm} />
                     <Route path="/events/:id" component={EventForm} />
                     <Route path="/">
                         <div className="app-wrapper r-padding-vertical-large">

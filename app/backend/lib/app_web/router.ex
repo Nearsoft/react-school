@@ -26,6 +26,7 @@ defmodule AppWeb.Router do
 
     resources "/user", UserController, only: [:index, :show, :create]
     resources "/atendee", AtendeeController, only: [:index, :edit, :show, :create]
+    options "/event", EventController, :options
     resources "/event", EventController, only: [:index, :show, :create, :edit] do
       get "/atendees", EventAtendeeController, :index
       post "/attend", EventAtendeeController, :create
