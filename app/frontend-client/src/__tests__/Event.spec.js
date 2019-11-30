@@ -19,5 +19,6 @@ describe('Event Component', () => {
 
         expect(testRenderer.toJSON().type).toEqual('div');
         expect(testRenderer.toJSON().props.className).toEqual('event-card r-padding-large r-margin-bottom-small');
+        expect(testRenderer).toMatchSnapshot();
     });
 });

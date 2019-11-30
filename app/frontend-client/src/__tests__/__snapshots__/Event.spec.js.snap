@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Event Component Render the Event component and check for properties 1`] = `
+<div
+  className="event-card r-padding-large r-margin-bottom-small"
+>
+  <div>
+    <h3 />
+    <p>
+      
+    </p>
+    <a
+      className="btn btn-primary"
+      href="#/events/undefined"
+    >
+      Inscribirse
+    </a>
+  </div>
+</div>
+`;
